@@ -189,47 +189,61 @@ img {
 }
 
 /* ===== Mobile Menu ===== */
-@media screen and (max-width: 1150px){
-    .nav__menu{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        background-color: var(--black-color);
-        width: 80%;
-            height: 100%;
-        padding: 7.5rem 3.5rem 0;
-        border-left: 2px solid var(--black-border);
-        transition: right .4s;
-        
-    }
+.nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    background-color: var(--body-color);
+    width: 80%;
+    height: 100%;
+    padding: 4rem 2rem;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
 }
-.nav__list{
-     display: flex;
+
+
+.nav__list {
+    display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    align-items: center;
+    gap: 1.5rem;
+     transition: right 0.3s ease-in-out;
 }
 
-.nav__link{
-    color: var(--text-color-light);
-    font-weight: var(--font-semi-bold);
-    transition: color .4s;
+.nav__link {
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+
+    transition: var(--transition);
 }
 
-.nav__link:hover{
-    color: var(--first-color);
+
+.nav__link:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+     transition: right 0.3s ease-in-out;
 }
 
-.nav__close{
+.nav__close {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
 }
 
 /* Show menu */
-.show-menu{
+.show-menu {
     right: 0;
-    
 }
 
 /* ===== Desktop Menu ===== */
@@ -284,10 +298,7 @@ img {
  width: 100%;
     height: 100vh; 
     overflow: hidden;
-}
-
-.home.show{
-  transition: opacity 1s ease-out, transform 1s ease-out;
+ 
 }
 @keyframes fadeInUp {
     from {
@@ -304,9 +315,7 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 }
-.home__container.show{
- transition: opacity 1s ease-out, transform 1s ease-in;
-}
+
 .home__content {
     display: flex;
     flex-direction: column;
