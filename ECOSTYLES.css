@@ -298,7 +298,10 @@ img {
  width: 100%;
     height: 100vh; 
     overflow: hidden;
- 
+}
+
+.home.show{
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 @keyframes fadeInUp {
     from {
@@ -315,7 +318,9 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.home__container.show{
+ transition: opacity 1s ease-out, transform 1s ease-in;
+}
 .home__content {
     display: flex;
     flex-direction: column;
