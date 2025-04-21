@@ -32,44 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    // ===== Mobile Menu Toggle =====
+    const menuBtn = document.getElementById("menu-btn");
+    const closeBtn = document.getElementById("close-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-
-    
-// Select elements
-const navMenu = document.getElementById("nav-menu"),
-      navToggle = document.getElementById("nav-toggle"),
-      navClose = document.getElementById("nav-close");
-
-// Show menu
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu");
-    });
-}
-
-// Hide menu
-if (navClose) {
-    navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu");
-    });
-}
-
-
-    
-
-
-    const navLink = document.querySelectorAll('.nav__link');
-
-const linkAction = () => {
-  const navMenu = document.getElementById('nav-menu');
-  // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove('show-menu');
-};
-
-navLink.forEach(n => n.addEventListener('click', linkAction));
-
-
-    
+    if (menuBtn && closeBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => mobileMenu.classList.add("open"));
+        closeBtn.addEventListener("click", () => mobileMenu.classList.remove("open"));
+    }
 
     // ===== Fade-in Sections on Scroll =====
     const fadeSections = document.querySelectorAll(".fade-in");
