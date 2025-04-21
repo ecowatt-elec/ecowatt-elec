@@ -910,6 +910,11 @@ transform: translateY(-5px);
     }
 }
 
+.contact-info {
+    flex-direction: column;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 480px) {
    
@@ -1024,7 +1029,64 @@ transform: translateY(-5px);
     
     
 
-    
+    @media screen and (max-width: 768px) {
+    .nav__menu {
+        width: 100%; 
+    }
+
+    .home__container {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .home__chat {
+        padding-left: 0; 
+        margin-top: 2rem; 
+    }
+
+    .about__container {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .about__data {
+        padding-right: 0; 
+    }
+
+    .about__image {
+        padding-left: 0; 
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .footer__content:first-child {
+        margin-right: 0; 
+    }
+
+    /* 👇 Add this */
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+.contact-boxes-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-box {
+    width: 90%; /* Makes them not too wide */
+    max-width: 400px; /* Optional limit */
+}
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
     
     
     
