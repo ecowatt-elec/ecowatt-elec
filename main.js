@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // ===== Scroll Up =====
+    // ===== Scroll Up Button =====
     const scrollUp = document.getElementById("scroll-up");
     if (scrollUp) {
         window.addEventListener("scroll", function () {
@@ -31,28 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // ===== Mobile Menu Toggle =====
+    const navMenu = document.getElementById("nav-menu"),
+          navToggle = document.getElementById("nav-toggle"),
+          navClose = document.getElementById("nav-close");
 
-  const navMenu = document.getElementById("nav-menu"),
-        navToggle = document.getElementById("nav-toggle"),
-        navClose = document.getElementById("nav-close");
+    if (navToggle && navMenu) {
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.add("show-menu");
+        });
+    }
 
-  // Show menu
-  if (navToggle && navMenu) {
-    navToggle.addEventListener("click", () => {
-      navMenu.classList.add("show-menu");
-    });
-  }
-
-  // Hide menu
-  if (navClose && navMenu) {
-    navClose.addEventListener("click", () => {
-      navMenu.classList.remove("show-menu");
-    });
-  }
-});
-
-
-
+    if (navClose && navMenu) {
+        navClose.addEventListener("click", () => {
+            navMenu.classList.remove("show-menu");
+        });
+    }
 
     // ===== Fade-in Sections on Scroll =====
     const fadeSections = document.querySelectorAll(".fade-in");
@@ -66,11 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", revealSection);
-    revealSection();
+    revealSection(); // Initial call
 
-    // ===== ScrollReveal Reset & Navigation Animation =====
+    // ===== ScrollReveal Animations =====
+    const sr = ScrollReveal({ reset: true }); // Initialize ScrollReveal
+
     function resetTransitions() {
-        ScrollReveal().clean();
+        sr.clean(); // Reset previously revealed elements
         sr.reveal(`.home__content, .services__data, .services__swiper`);
         sr.reveal(`.home__images`, { origin: 'bottom', delay: 1000 });
         sr.reveal(`.about__images, .contact__img`, { origin: 'left' });
@@ -86,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: targetSection.offsetTop,
                 behavior: 'smooth'
             });
+            navMenu.classList.remove('show-menu'); // Close menu on link click
             resetTransitions();
         }
     }
@@ -94,56 +91,29 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', navigateToSection);
     });
 
-    resetTransitions();
+    resetTransitions(); // Initial animation trigger
 
-    const menuButton = document.getElementById('nav-toggle');
-    const closeButton = document.getElementById('nav-close');
-    const navMenu = document.getElementById('nav-menu');
+    // ===== Image Slider with Thumbnails =====
+    const slides = document.querySelectorAll('.slide');
+    const thumbs = document.querySelectorAll('.thumb');
+    let currentSlide = 0;
 
-    menuButton.addEventListener('click', () => {
-        navMenu.classList.add('active');
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            thumbs[i].classList.toggle('active', i === index);
+        });
+        currentSlide = index;
+    }
+
+    thumbs.forEach((thumb, index) => {
+        thumb.addEventListener('click', () => {
+            showSlide(index);
+        });
     });
 
-    closeButton.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-const slides = document.querySelectorAll('.slide');
-const thumbs = document.querySelectorAll('.thumb');
-let currentSlide = 0;
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-    thumbs[i].classList.toggle('active', i === index);
-  });
-  currentSlide = index;
-}
-
-thumbs.forEach((thumb, index) => {
-  thumb.addEventListener('click', () => {
-    showSlide(index);
-  });
+    setInterval(() => {
+        let nextSlide = (currentSlide + 1) % slides.length;
+        showSlide(nextSlide);
+    }, 5000);
 });
-
-setInterval(() => {
-  let nextSlide = (currentSlide + 1) % slides.length;
-  showSlide(nextSlide);
-}, 5000);
-
-    
-    
-    
-    
-    
-    
