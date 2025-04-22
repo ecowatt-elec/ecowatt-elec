@@ -32,15 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // ===== Mobile Menu Toggle =====
-    const menuBtn = document.getElementById("menu-btn");
-    const closeBtn = document.getElementById("close-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+  const navMenu = document.getElementById("nav-menu"),
+        navToggle = document.getElementById("nav-toggle"),
+        navClose = document.getElementById("nav-close");
 
-    if (menuBtn && closeBtn && mobileMenu) {
-        menuBtn.addEventListener("click", () => mobileMenu.classList.add("open"));
-        closeBtn.addEventListener("click", () => mobileMenu.classList.remove("open"));
-    }
+  // Show menu
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.add("show-menu");
+    });
+  }
+
+  // Hide menu
+  if (navClose && navMenu) {
+    navClose.addEventListener("click", () => {
+      navMenu.classList.remove("show-menu");
+    });
+  }
+});
+
+
+
 
     // ===== Fade-in Sections on Scroll =====
     const fadeSections = document.querySelectorAll(".fade-in");
