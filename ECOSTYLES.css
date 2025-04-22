@@ -201,15 +201,7 @@ img {
     transition: right 0.3s ease-in-out;
 }
 
-
-
-.nav__menu.active {
-    right: 0;
-}
-
-
 .nav__menu.show-menu {
-    transform: translateX(0);
     right: 0;
 }
 
