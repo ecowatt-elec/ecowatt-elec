@@ -31,37 +31,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // ===== Mobile Menu Toggle =====
+    const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle'),
+          navClose = document.getElementById('nav-close');
 
+    // Show menu
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu');
+        });
+    }
 
-    
+    // Hide menu
+    if (navClose && navMenu) {
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+        });
+    }
 
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
-
-// Show menu when toggle is clicked
-if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
+    // Hide menu on nav link click
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+        });
     });
-}
-
-// Hide menu when close icon is clicked
-if (navClose && navMenu) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-    });
-}
-
-// Optional: Close menu when any nav link is clicked (for smoother UX)
-const navLinks = document.querySelectorAll('.nav__link');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-    });
-});
-    
 
     // ===== Fade-in Sections on Scroll =====
     const fadeSections = document.querySelectorAll(".fade-in");
@@ -78,10 +72,10 @@ navLinks.forEach(link => {
     revealSection(); // Initial call
 
     // ===== ScrollReveal Animations =====
-    const sr = ScrollReveal({ reset: true }); // Initialize ScrollReveal
+    const sr = ScrollReveal({ reset: true });
 
     function resetTransitions() {
-        sr.clean(); // Reset previously revealed elements
+        sr.clean();
         sr.reveal(`.home__content, .services__data, .services__swiper`);
         sr.reveal(`.home__images`, { origin: 'bottom', delay: 1000 });
         sr.reveal(`.about__images, .contact__img`, { origin: 'left' });
@@ -97,7 +91,7 @@ navLinks.forEach(link => {
                 top: targetSection.offsetTop,
                 behavior: 'smooth'
             });
-            navMenu.classList.remove('show-menu'); // Close menu on link click
+            navMenu.classList.remove('show-menu');
             resetTransitions();
         }
     }
