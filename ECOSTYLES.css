@@ -208,6 +208,13 @@ img {
 }
 
 
+.nav__menu.show-menu {
+    transform: translateX(0);
+    right: 0;
+}
+
+
+
 .nav__list {
     display: flex;
     flex-direction: column;
