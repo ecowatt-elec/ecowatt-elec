@@ -72,7 +72,6 @@ html {
     font-family: "Montserrat", sans-serif;
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: var(--transition);
 }
 
 h1,
@@ -117,10 +116,6 @@ img {
 .section__title,
 .section__subtitle {
     text-align: center;
-}
-
-.section.active{
-    transition: var(--transition)
 }
 
 .section__title {
