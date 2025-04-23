@@ -669,7 +669,6 @@ transform: translateY(-5px);
     justify-content: center; 
     width: 100%;
     margin-bottom: 2rem; 
-     flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -683,9 +682,9 @@ transform: translateY(-5px);
 
 .contact-box {
     background-color: var(--container-color);
-    /* Or a specific color */
+
     border: 1px solid var(--gray-border);
-    /* Ensure your gray border variable is defined */
+
     border-radius: 5px;
     padding: 1.5rem;
     text-align: center;
@@ -1027,7 +1026,7 @@ transform: translateY(-5px);
         margin-right: 0; 
     }
 
-    /* 👇 Add this */
+
     .contact-content {
         grid-template-columns: 1fr;
     }
@@ -1038,8 +1037,8 @@ transform: translateY(-5px);
 }
 
 .contact-box {
-    width: 90%; /* Makes them not too wide */
-    max-width: 400px; /* Optional limit */
+    width: 90%; 
+    max-width: 400px;
 }
 
     .contact-info {
