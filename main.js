@@ -130,22 +130,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const backToHomeBtn = document.getElementById("backToHome");
+const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    backToHomeBtn.classList.add("show");
-  } else {
-    backToHomeBtn.classList.remove("show");
-  }
+    // Show button if scrolled down past 300px, and not at the top
+    if (window.scrollY > 300) {
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
 });
 
-backToHomeBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
+
 
 
 
