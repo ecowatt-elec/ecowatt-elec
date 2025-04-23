@@ -72,30 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     revealSection(); // Initial call
 
 
-    // ===== Image Slider with Thumbnails =====
-    const slides = document.querySelectorAll('.slide');
-    const thumbs = document.querySelectorAll('.thumb');
-    let currentSlide = 0;
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-            thumbs[i].classList.toggle('active', i === index);
-        });
-        currentSlide = index;
-    }
-
-    thumbs.forEach((thumb, index) => {
-        thumb.addEventListener('click', () => {
-            showSlide(index);
-        });
-    });
-
-    setInterval(() => {
-        let nextSlide = (currentSlide + 1) % slides.length;
-        showSlide(nextSlide);
-    }, 5000);
-);
 
 
 
