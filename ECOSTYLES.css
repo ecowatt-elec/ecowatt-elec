@@ -206,7 +206,7 @@ img {
 }
 
 .nav__menu.show-menu {
-    right: 50%;
+    right: -50%;
 }
 
 
