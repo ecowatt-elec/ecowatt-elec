@@ -305,7 +305,7 @@ img {
     overflow: hidden;
 opacity: 0;
 transform: translateY(-60px);
-transition: transform 1s ease, opacity 1s ease; 
+transition: transform 1.7s ease, opacity 1.7s ease; 
 
 }
 
@@ -491,8 +491,8 @@ transition: transform 1.6s ease, opacity 1.5s ease;
         padding: 150px 0;
 background-color: #E5E4E2;  
 opacity: 0;
-transform: translateY(-60px); /* Increased from -30px to -60px */
-transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
+transform: translateY(-60px);  
+transition: transform 1.7s ease, opacity 1.7s ease;   
 
 }
 .contact-now-btn{
@@ -590,8 +590,8 @@ transform: translateY(-5px);
 .projects {
     background-color: #C0C0C0;  
  opacity: 0;
-transform: translateY(-60px); /* Increased from -30px to -60px */
-transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
+transform: translateY(-60px);  
+transition: transform 1.7s ease, opacity 1.7s ease;   
 
 }
 
@@ -655,8 +655,8 @@ transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
     background-color: #A9A9A9;
     padding: 150px 0;
 opacity: 0;
-transform: translateY(-60px); /* Increased from -30px to -60px */
-transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
+transform: translateY(-60px);  
+transition: transform 1.7s ease, opacity 1.7s ease;   
 
 
 }
