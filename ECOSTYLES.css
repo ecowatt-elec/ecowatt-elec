@@ -269,13 +269,6 @@ img {
     .nav__close {
         display: none; 
     }
-
-    .contact-boxes-container {
-    display: flex;
-    justify-content: center; 
-    width: 100%;
-    margin-bottom: 2rem; 
-}
     .nav__toggle {
         display: none;
     }
@@ -676,6 +669,8 @@ transform: translateY(-5px);
     justify-content: center; 
     width: 100%;
     margin-bottom: 2rem; 
+     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .contact-info {
