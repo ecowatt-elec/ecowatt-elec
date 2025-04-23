@@ -119,6 +119,10 @@ img {
     text-align: center;
 }
 
+.section.active{
+    transition: var(--transition)
+}
+
 .section__title {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
