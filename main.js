@@ -129,3 +129,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    },
+    {
+      threshold: 0.1 // Trigger when 10% of section is visible
+    }
+  );
+
+  // Target all the sections that should animate in
+  const sections = document.querySelectorAll(
+    ".home, .about, .services, .projects, .contact"
+  );
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
+
