@@ -133,8 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
-    // Show button if scrolled down past 300px, and not at the top
-    if (window.scrollY > 300) {
+    if (window.scrollY > 100) { // Show earlier
         scrollBtn.classList.add("show");
     } else {
         scrollBtn.classList.remove("show");
