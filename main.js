@@ -126,3 +126,26 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(nextSlide);
     }, 5000);
 });
+
+
+
+
+
+
+
+const backToHomeBtn = document.getElementById("backToHome");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    backToHomeBtn.classList.add("show");
+  } else {
+    backToHomeBtn.classList.remove("show");
+  }
+});
+
+backToHomeBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
