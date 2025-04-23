@@ -532,12 +532,6 @@ background-color: #E5E4E2;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
-@media (max-width: 768px) {
-  .service-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 .service-card:hover{
 transform: translateY(-5px); 
@@ -664,7 +658,7 @@ transform: translateY(-5px);
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
 }
-@media (min-width: 768px)
+
 .contact-boxes-container {
     display: flex;
     justify-content: center; 
@@ -1049,10 +1043,14 @@ transform: translateY(-5px);
         flex-direction: column;
         align-items: center;
     }
+         .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
-
+ 
 
 
 
