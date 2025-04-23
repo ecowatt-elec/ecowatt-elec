@@ -72,6 +72,7 @@ html {
     font-family: "Montserrat", sans-serif;
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: var(--transition);
 }
 
 h1,
@@ -116,6 +117,10 @@ img {
 .section__title,
 .section__subtitle {
     text-align: center;
+}
+
+.section.active{
+    transition: var(--transition)
 }
 
 .section__title {
@@ -293,15 +298,24 @@ img {
     background-color: var(--black-color);
     text-align: center;
     padding: 120px 0;
-
+        opacity: 0;
     transform: translateY(-30px);
  width: 100%;
     height: 100vh; 
     overflow: hidden;
- transition: var(--transition);
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--transition);
 }
+
+.home.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes fadeInUp {
     from {
+        opacity: 0;
         transform: translateY(30px);
     }
     to {
@@ -419,10 +433,16 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
     background-color: var(--section-bg-color);
         padding: 150px 0;
     background-color: hsl(200, 20%, 90%);
+            opacity: 0;
     transform: translateY(-30px);
-     transition: var(--transition);
+opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--transition);
 }
-
+.about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .about__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -470,8 +490,15 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
 .services {
         padding: 150px 0;
 background-color: #E5E4E2;  
+            opacity: 0;
     transform: translateY(-30px);
-     transition: var(--transition);
+ opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--transition);
+}
+.services.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .contact-now-btn{
         background: var(--first-gradient);
@@ -482,6 +509,7 @@ background-color: #E5E4E2;
     transition: box-shadow 0.4s;
     
 }
+
 .services__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -566,8 +594,14 @@ transform: translateY(-5px);
 
 .projects {
     background-color: #C0C0C0;  
-    transform: translateY(-30px);
-     transition: var(--transition);
+            opacity: 0;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--transition);
+}
+.projects.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-cards {
@@ -629,14 +663,23 @@ transform: translateY(-5px);
 .contact {
     background-color: #A9A9A9;
     padding: 150px 0;
+            opacity: 0;
     transform: translateY(-30px);
      transition: var(--transition);
+}
+
+.contact.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 2fr; 
     gap: 2rem;
+      opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--transition);
 }
 
 .contact-heading {
