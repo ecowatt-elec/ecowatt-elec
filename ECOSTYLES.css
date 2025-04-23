@@ -665,14 +665,11 @@ transform: translateY(-5px);
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
 }
-
 .contact-boxes-container {
     display: flex;
     justify-content: center; 
     width: 100%;
     margin-bottom: 2rem; 
-    flex-direction: row;
-    
 }
 
 .contact-info {
