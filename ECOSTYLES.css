@@ -308,7 +308,7 @@ img {
   transition: var(--transition);
 }
 
-.home.visible {
+.home.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -439,7 +439,7 @@ opacity: 0;
   transform: translateY(-30px);
   transition: var(--transition);
 }
-.about.visible {
+.about.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -496,7 +496,7 @@ background-color: #E5E4E2;
   transform: translateY(-30px);
   transition: var(--transition);
 }
-.services.visible {
+.services.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -599,7 +599,7 @@ transform: translateY(-5px);
   transform: translateY(-30px);
   transition: var(--transition);
 }
-.projects.visible {
+.projects.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -668,7 +668,7 @@ transform: translateY(-5px);
      transition: var(--transition);
 }
 
-.contact.visible {
+.contact.active {
   opacity: 1;
   transform: translateY(0);
 }
