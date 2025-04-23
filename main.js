@@ -130,9 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
 const backToHomeBtn = document.getElementById("backToHome");
 
 window.addEventListener("scroll", () => {
@@ -149,3 +146,6 @@ backToHomeBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+
