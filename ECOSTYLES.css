@@ -305,7 +305,7 @@ img {
     overflow: hidden;
 opacity: 0;
 transform: translateY(-60px);
-transition: transform 0.6s ease, opacity 0.6s ease; 
+transition: transform 1s ease, opacity 1s ease; 
 
 }
 
@@ -441,7 +441,7 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
 transform: translateY(-60px); 
-transition: transform 0.6s ease, opacity 0.8s ease; 
+transition: transform 1.6s ease, opacity 1.5s ease; 
 }
 .about__container {
     display: grid;
@@ -492,7 +492,7 @@ transition: transform 0.6s ease, opacity 0.8s ease;
 background-color: #E5E4E2;  
 opacity: 0;
 transform: translateY(-60px); /* Increased from -30px to -60px */
-transition: transform 0.6s ease, opacity 0.6s ease; /* You can tweak timing too */
+transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
 
 }
 .contact-now-btn{
@@ -591,7 +591,7 @@ transform: translateY(-5px);
     background-color: #C0C0C0;  
  opacity: 0;
 transform: translateY(-60px); /* Increased from -30px to -60px */
-transition: transform 0.6s ease, opacity 0.6s ease; /* You can tweak timing too */
+transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
 
 }
 
@@ -656,7 +656,7 @@ transition: transform 0.6s ease, opacity 0.6s ease; /* You can tweak timing too 
     padding: 150px 0;
 opacity: 0;
 transform: translateY(-60px); /* Increased from -30px to -60px */
-transition: transform 0.6s ease, opacity 0.6s ease; /* You can tweak timing too */
+transition: transform 1s ease, opacity 1s ease; /* You can tweak timing too */
 
 
 }
