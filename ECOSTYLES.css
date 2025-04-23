@@ -441,7 +441,7 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
 transform: translateY(-60px); 
-transition: transform 1.6s ease, opacity 1.5s ease; 
+transition: transform 1.7s ease, opacity 1.7s ease; 
 }
 .about__container {
     display: grid;
