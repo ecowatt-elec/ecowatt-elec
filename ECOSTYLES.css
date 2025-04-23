@@ -665,6 +665,7 @@ transform: translateY(-5px);
     width: 100%;
     margin-bottom: 2rem; 
     flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 
 .contact-info {
@@ -897,6 +898,7 @@ transform: translateY(-5px);
 .contact-boxes-container {
     flex-direction: column;
     align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
     
     .contact-button {
