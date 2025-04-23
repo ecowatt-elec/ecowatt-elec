@@ -486,6 +486,9 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
 background-color: #E5E4E2;  
             opacity: 0;
     transform: translateY(-30px);
+
+  transform: translateY(-30px);
+  transition: var(--transition);
 }
 .contact-now-btn{
         background: var(--first-gradient);
@@ -584,6 +587,7 @@ transform: translateY(-5px);
   opacity: 0;
   transform: translateY(-30px);
   transition: var(--transition);
+
 }
 .projects.visible {
   opacity: 1;
