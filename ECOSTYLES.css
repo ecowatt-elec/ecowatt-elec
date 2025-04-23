@@ -1095,33 +1095,36 @@ transform: translateY(-5px);
 
 .scroll-top-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4caf50; /* adjust to match your theme */
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff6600; /* more vibrant to stand out */
     color: white;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 999;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s;
 }
 
 .scroll-top-btn:hover {
-    background-color: #388e3c; /* darker on hover */
+    background-color: #e65c00;
+    transform: scale(1.1);
 }
 
 .scroll-top-btn.show {
     opacity: 1;
     visibility: visible;
 }
+
 
     
     
