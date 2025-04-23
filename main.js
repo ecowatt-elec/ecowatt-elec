@@ -102,28 +102,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = "1";
-          entry.target.style.transform = "translateY(0)";
-          observer.unobserve(entry.target); // Only animate once
-        }
-      });
-    },
-    {
-      threshold: 0.1 // Trigger when 10% of section is visible
-    }
-  );
-
-  // Target all the sections that should animate in
-  const sections = document.querySelectorAll(
-    ".home, .about, .services, .projects, .contact"
-  );
-
-  sections.forEach(section => {
+function resetTransitions() {
+  sections.forEach((section) => {
+    section.classList.remove('visible');
     observer.observe(section);
   });
+}
+
+// Call this function when the page is revisited or revisited a section
+// For example, on page reload
+window.addEventListener('load', resetTransitions);
+
+// Or, on scroll to top
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    resetTransitions();
+  }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
