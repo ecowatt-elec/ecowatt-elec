@@ -102,25 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-function resetTransitions() {
-  sections.forEach((section) => {
-    section.classList.remove('visible');
-    observer.observe(section);
-  });
-}
-
-// Call this function when the page is revisited or revisited a section
-// For example, on page reload
-window.addEventListener('load', resetTransitions);
-
-// Or, on scroll to top
-window.addEventListener('scroll', () => {
-  if (window.scrollY === 0) {
-    resetTransitions();
-  }
-});
-
-
 
 
 
