@@ -303,6 +303,7 @@ img {
  width: 100%;
     height: 100vh; 
     overflow: hidden;
+ transition: var(--transition);
 }
 @keyframes fadeInUp {
     from {
@@ -426,7 +427,7 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
     background-color: hsl(200, 20%, 90%);
             opacity: 0;
     transform: translateY(-30px);
-    animation: fadeInUp 1s ease-in-out forwards;
+     transition: var(--transition);
 }
 
 .about__container {
@@ -478,7 +479,7 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
 background-color: #E5E4E2;  
             opacity: 0;
     transform: translateY(-30px);
-    animation: fadeInUp 1s ease-in-out forwards;
+     transition: var(--transition);
 }
 .contact-now-btn{
         background: var(--first-gradient);
@@ -575,7 +576,7 @@ transform: translateY(-5px);
     background-color: #C0C0C0;  
             opacity: 0;
     transform: translateY(-30px);
-    animation: fadeInUp 1s ease-in-out forwards;
+     transition: var(--transition);
 }
 
 .project-cards {
@@ -639,7 +640,7 @@ transform: translateY(-5px);
     padding: 150px 0;
             opacity: 0;
     transform: translateY(-30px);
-    animation: fadeInUp 1s ease-in-out forwards;
+     transition: var(--transition);
 }
 
 .contact-content {
