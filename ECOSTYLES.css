@@ -1090,7 +1090,37 @@ transform: translateY(-5px);
     }
 }
 
-    
+
+
+
+
+
+
+
+
+
+    .scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #00c3ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
     
     
     
