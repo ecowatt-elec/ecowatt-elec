@@ -664,6 +664,7 @@ transform: translateY(-5px);
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
 }
+@media (min-width: 768px)
 .contact-boxes-container {
     display: flex;
     justify-content: center; 
