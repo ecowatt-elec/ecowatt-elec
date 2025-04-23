@@ -206,7 +206,7 @@ img {
 }
 
 .nav__menu.show-menu {
-    right: -50%;
+    right: 0;
 }
 
 
@@ -215,7 +215,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3.5rem;
 }
 
 .nav__link {
