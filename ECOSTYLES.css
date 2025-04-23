@@ -663,7 +663,7 @@ transform: translateY(-5px);
 .contact {
     background-color: #A9A9A9;
     padding: 150px 0;
-            opacity: 0;
+
     transform: translateY(-30px);
 
 }
@@ -673,7 +673,7 @@ transform: translateY(-5px);
     display: grid;
     grid-template-columns: 1fr 2fr; 
     gap: 2rem;
-      opacity: 0;
+
   transform: translateY(-30px);
 
 }
