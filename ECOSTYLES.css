@@ -215,7 +215,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.5rem;
+    gap: 4rem;
 }
 
 .nav__link {
@@ -305,7 +305,7 @@ img {
     overflow: hidden;
 opacity: 0;
 transform: translateY(-60px);
-transition: transform 1.7s ease, opacity 1.7s ease; 
+transition: transform 2s ease, opacity 2s ease; 
 
 }
 
@@ -441,7 +441,7 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
 transform: translateY(-60px); 
-transition: transform 1.7s ease, opacity 1.7s ease; 
+transition: transform 2s ease, opacity 2s ease; 
 }
 .about__container {
     display: grid;
@@ -492,11 +492,11 @@ transition: transform 1.7s ease, opacity 1.7s ease;
 background-color: #E5E4E2;  
 opacity: 0;
 transform: translateY(-60px);  
-transition: transform 1.7s ease, opacity 1.7s ease;   
+transition: transform 2s ease, opacity 2s ease;   
 
 }
 .contact-now-btn{
-        background: var(--first-gradient);
+    background: var(--first-gradient);
     color: var(--white-color);
     font-weight: var(--font-semi-bold);
     padding: 0.75rem 1.5rem;
@@ -591,7 +591,7 @@ transform: translateY(-5px);
     background-color: #C0C0C0;  
  opacity: 0;
 transform: translateY(-60px);  
-transition: transform 1.7s ease, opacity 1.7s ease;   
+transition: transform 2s ease, opacity 2s ease;   
 
 }
 
@@ -656,7 +656,7 @@ transition: transform 1.7s ease, opacity 1.7s ease;
     padding: 150px 0;
 opacity: 0;
 transform: translateY(-60px);  
-transition: transform 1.7s ease, opacity 1.7s ease;   
+transition: transform 2s ease, opacity 2s ease;   
 
 
 }
