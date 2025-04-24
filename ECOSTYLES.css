@@ -304,8 +304,8 @@ img {
     height: 100vh; 
     overflow: hidden;
 opacity: 0;
-transform: translateX(-100px);
-transition: transform 2s ease-out, opacity 2s ease-out;
+transform: translateY(-60px);
+transition: transform 2s ease, opacity 2s ease; 
 
 }
 
