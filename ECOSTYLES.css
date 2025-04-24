@@ -438,6 +438,8 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
     background-color: var(--section-bg-color);
         padding: 170px 0;
     background-color: hsl(200, 20%, 90%);
+     width: 100%;
+    height: 120vh; 
 opacity: 0;
 transform: translateX(-100px);
 transition: transform 1.5s ease-out, opacity 1.5s ease-out;
