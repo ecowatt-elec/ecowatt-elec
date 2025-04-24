@@ -297,7 +297,7 @@ img {
     position: relative;
     background-color: var(--black-color);
     text-align: center;
-    padding: 120px 0;
+    padding: 140px 0;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 
  width: 100%;
