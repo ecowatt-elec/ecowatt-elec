@@ -304,8 +304,8 @@ img {
     height: 100vh; 
     overflow: hidden;
 opacity: 0;
-transform: translateY(-60px);
-transition: transform 2s ease, opacity 2s ease; 
+transform: translateX(-100px);
+transition: transform 2s ease-out, opacity 2s ease-out;
 
 }
 
@@ -440,8 +440,9 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
         padding: 150px 0;
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
-transform: translateY(-60px); 
-transition: transform 2s ease, opacity 2s ease; 
+transform: scale(0.5);
+transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+
 }
 .about__container {
     display: grid;
@@ -491,8 +492,9 @@ transition: transform 2s ease, opacity 2s ease;
         padding: 150px 0;
 background-color: #E5E4E2;  
 opacity: 0;
-transform: translateY(-60px);  
-transition: transform 2s ease, opacity 2s ease;   
+transform: rotate(-90deg);
+transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+ 
 
 }
 .contact-now-btn{
@@ -589,9 +591,10 @@ transform: translateY(-5px);
 
 .projects {
     background-color: #C0C0C0;  
- opacity: 0;
-transform: translateY(-60px);  
-transition: transform 2s ease, opacity 2s ease;   
+opacity: 0;
+transform: skewY(20deg);
+transition: transform 2s ease, opacity 2s ease;
+
 
 }
 
@@ -655,8 +658,10 @@ transition: transform 2s ease, opacity 2s ease;
     background-color: #A9A9A9;
     padding: 150px 0;
 opacity: 0;
-transform: translateY(-60px);  
-transition: transform 2s ease, opacity 2s ease;   
+transform: translateY(-60px) scale(0.8);
+transition: transform 2s ease, opacity 2s ease;
+
+  
 
 
 }
