@@ -306,7 +306,6 @@ img {
 opacity: 0;
 transform: translateY(-60px);
 transition: transform 2s ease, opacity 2s ease; 
-
 }
 
 
@@ -440,9 +439,8 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
         padding: 150px 0;
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
-transform: translateY(100px);
-transition: transform 2s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 2s ease;
-
+transform: translateX(-100px);
+transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
 .about__container {
     display: grid;
