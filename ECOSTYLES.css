@@ -598,8 +598,8 @@ transform: translateY(-5px);
 .projects {
     background-color: #C0C0C0;  
 opacity: 0;
-transform: translateX(60px) rotate(10deg);
-transition: transform 2s ease-out, opacity 2s ease;
+transition: opacity 2s ease;
+
 
 
 
