@@ -440,8 +440,9 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
         padding: 150px 0;
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
-transform: scale(0.5);
-transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+transform: translateY(-200px);
+transition: transform 2s cubic-bezier(0.25, 1.25, 0.5, 1), opacity 2s ease;
+
 
 }
 .about__container {
