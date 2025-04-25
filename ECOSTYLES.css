@@ -491,8 +491,9 @@ transition: transform 1.7s ease-out, opacity 1.7s ease-out;
         padding: 150px 0;
 background-color: #E5E4E2;  
 opacity: 0;
-transform: translateX(-100px);
+transform: translateX(100px);
 transition: transform 1.7s ease-out, opacity 1.7s ease-out;
+
 
 }
 .contact-now-btn{
