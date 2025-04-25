@@ -440,8 +440,8 @@ box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
         padding: 150px 0;
     background-color: hsl(200, 20%, 90%);
 opacity: 0;
-transform: translateY(-60px); 
-transition: transform 1.7s ease, opacity 1.7s ease; 
+transform: translateX(-100px);
+transition: transform 1.7s ease-out, opacity 1.7s ease-out;
 }
 .about__container {
     display: grid;
@@ -492,7 +492,7 @@ transition: transform 1.7s ease, opacity 1.7s ease;
 background-color: #E5E4E2;  
 opacity: 0;
 transform: translateX(-100px);
-transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+transition: transform 1.7s ease-out, opacity 1.7s ease-out;
 
 }
 .contact-now-btn{
@@ -591,7 +591,7 @@ transform: translateY(-5px);
     background-color: #C0C0C0;  
 opacity: 0;
 transform: translateX(-100px);
-transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+transition: transform 1.7s ease-out, opacity 1.7s ease-out;
 
 }
 
