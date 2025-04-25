@@ -559,8 +559,17 @@ transition: transform 1.7s ease-out, opacity 1.7s ease-out;
 transform: translateY(-5px); 
 }
 .service-card.active {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+}
+.service-card.active:hover{
+transform: translateY(-5px); 
 }
 
 .service-card img {
