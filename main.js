@@ -170,8 +170,9 @@ form.addEventListener('submit', function(event) {
     if (form.checkValidity()) { 
         alert('Message Sent!'); 
         setTimeout(() => {
+          window.location.href = '#home'; 
             window.location.reload();
-        }, 500);
+        }, 350);
     }
 });
 
