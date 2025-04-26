@@ -163,20 +163,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
-const form = document.querySelector('form');
-
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    
-    if (form.checkValidity()) { 
-        alert('Message Sent!'); 
-        setTimeout(() => {
-            window.location.reload();
-        }, 500);
-    }
-});
