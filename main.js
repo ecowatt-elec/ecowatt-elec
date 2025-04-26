@@ -171,8 +171,9 @@ form.addEventListener('submit', function(event) {
         alert('Message Sent!'); 
         setTimeout(() => {
           window.location.href = '#home'; 
+            , 500);
             window.location.reload();
-        }, 1200);
+        }
     }
 });
 
