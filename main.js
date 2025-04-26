@@ -175,18 +175,3 @@ form.addEventListener('submit', function(event) {
         }, 1.200);
     }
 });
-
-
-
-
-const nextInput = document.querySelector('input[name="_next"]');
-
-
-  if (nextInput) {
-
-    setTimeout(function() {
-
-      window.location.href = nextInput.value;
-    }, 1700); 
-  }
-});
