@@ -157,26 +157,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
-
-
-
-
-
- function handleSubmit(event) {
-    event.preventDefault(); 
-    
-
-    if (event.target.checkValidity()) {
-      alert("Message Sent"); 
-      setTimeout(() => {
-        window.location.reload(); 
-      }, 100);
-    } else {
-
-    }
-  }
-
