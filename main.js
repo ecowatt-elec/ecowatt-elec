@@ -169,11 +169,10 @@ form.addEventListener('submit', function(event) {
     
     if (form.checkValidity()) { 
         alert('Message Sent!'); 
+        window.location.href = '#home';
         setTimeout(() => {
-          window.location.href = '#home'; 
-            , 500);
-            window.location.reload();
-        }
+            window.location.reload();  
+        }, 500);
     }
 });
 
