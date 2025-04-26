@@ -166,12 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+ function handleSubmit(event) {
+    event.preventDefault(); 
+    
 
-function handleSubmit(event) {
-  event.preventDefault(); 
-  alert("Message Sent");
-}
+    if (event.target.checkValidity()) {
+      alert("Message Sent"); 
+      setTimeout(() => {
+        window.location.reload(); 
+      }, 100);
+    } else {
 
-
-
+    }
+  }
 
