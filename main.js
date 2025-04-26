@@ -157,3 +157,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+
+
+
+
+
+
+   const form = document.querySelector('form');
+
+  form.addEventListener('submit', function(event) {
+
+    if (form.checkValidity()) {
+
+      alert('The message is sent');
+      
+ 
+      setTimeout(function() {
+        location.reload();
+      }, 800);
+    } else {
+
+      event.preventDefault(); 
+    }
+  });
