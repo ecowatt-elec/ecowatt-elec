@@ -166,16 +166,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+const form = document.querySelector('form');
+
 form.addEventListener('submit', function(event) {
     event.preventDefault(); 
-
-    if (form.checkValidity()) {
-        alert('The message is sent');
-        setTimeout(function() {
-            location.reload();
-        }, 800);
-    } else {
- form.reportValidity();
+    
+    if (form.checkValidity()) { 
+        alert('Message Sent!'); 
     }
 });
+
 
