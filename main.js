@@ -172,7 +172,7 @@ form.addEventListener('submit', function(event) {
         setTimeout(() => {
           window.location.href = '#home'; 
             window.location.reload();
-        }, 500);
+        }, 900);
     }
 });
 
