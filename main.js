@@ -166,6 +166,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function(event) {
@@ -173,7 +175,8 @@ form.addEventListener('submit', function(event) {
     
     if (form.checkValidity()) { 
         alert('Message Sent!'); 
+        setTimeout(() => {
+            window.location.reload();
+        }, 500);
     }
 });
-
-
