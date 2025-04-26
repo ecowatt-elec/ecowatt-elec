@@ -166,20 +166,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-   const form = document.querySelector('form');
-
-  form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
     if (form.checkValidity()) {
-
-      alert('The message is sent');
-      
- 
-      setTimeout(function() {
-        location.reload();
-      }, 800);
+        alert('The message is sent');
+        setTimeout(function() {
+            location.reload();
+        }, 800);
     } else {
-
-      event.preventDefault(); 
+ form.reportValidity();
     }
-  });
+});
+
