@@ -156,3 +156,29 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+  function sendMessage() {
+
+    const name = document.querySelector('input[name="name"]').value.trim();
+    const email = document.querySelector('input[name="email"]').value.trim();
+    const message = document.querySelector('textarea[name="message"]').value.trim();
+
+
+    if (name && email && message) {
+      alert("Message Sent");
+    }
+  }
+
+
+
+
