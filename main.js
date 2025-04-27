@@ -343,6 +343,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', function(event) {
     if (form.checkValidity()) {
         alert('Message Sent!');
+         window.location.href = '#home';
     }
 
 
