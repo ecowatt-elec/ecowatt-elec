@@ -159,6 +159,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function sendMail(){
+    let parms = {
+        name : document.getElemnetById("name").value,
+        email : document.getElemnetById("email").value,
+        message : document.getElemnetById("message").value,
+    }
+
+    emailjs.send("service_0qei526","template_i2cny0s",parms);
+}
+
+
 
 
 
