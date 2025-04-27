@@ -172,6 +172,6 @@ form.addEventListener('submit', function(event) {
         window.location.href = '#home';
         setTimeout(() => {
             window.location.reload();  
-        }, 1.200);
+        }, 1.700);
     }
 });
