@@ -341,13 +341,25 @@ document.addEventListener("DOMContentLoaded", function () {
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function(event) {
-    if (form.checkValidity()) {
-        alert('Message Sent!');
-         window.location.href = '#home';
-    }
+     event.preventDefault();
+  if (form.checkValidity()) {
+        const formData = new FormData(form);
+
+        fetch(form.action, { 
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Message sent successfully!');
+                         window.location.href = '#home';
+            }
 
 
     setTimeout(() => {
         window.location.reload();
-    }, 1000);
+    }, 1200);
 });
