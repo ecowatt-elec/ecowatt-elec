@@ -341,13 +341,13 @@ document.addEventListener("DOMContentLoaded", function () {
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function(event) {
-
-if (form.checkValidity()) {
+    if (form.checkValidity()) {
         alert('Message Sent!');
-        window.location.href = '#home';
+         window.location.href = '#home';
+    }
 
 
     setTimeout(() => {
         window.location.reload();
-    }, 1200);
+    }, 1000);
 });
