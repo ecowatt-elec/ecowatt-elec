@@ -1031,16 +1031,59 @@ transition: transform 2s ease, opacity 2s ease;
     .nav__menu {
         width: 100%; 
     }
-
-    .home__container {
-        grid-template-columns: 1fr; 
-        text-align: center; 
+   .home {
+        padding: 60px 0; 
+        height: auto; 
     }
 
-    .home__chat {
-        padding-left: 0; 
-        margin-top: 2rem; 
+    .home__container,
+    .home__content,
+    .home__data,
+    .home__buttons,
+    .home__info {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
+
+    .home__title {
+        font-size: 2.5rem; 
+    }
+
+    .home__description {
+        font-size: 1rem; 
+        max-width: 90%; 
+    }
+
+    .home__info {
+        gap: 20px;
+    }
+
+    .home__info-title {
+        font-size: 2.5rem; 
+    }
+
+    .home__info-description {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .home__title {
+        font-size: 2rem; 
+    }
+
+    .home__description {
+        font-size: 0.9rem; 
+    }
+
+    .home__info-title {
+        font-size: 2rem; 
+    }
+
+    .home__info-description {
+        font-size: 0.9rem; 
+    }
+}
 
     .about__container {
         grid-template-columns: 1fr; 
