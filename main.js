@@ -349,5 +349,5 @@ form.addEventListener('submit', function(event) {
 
     setTimeout(() => {
         window.location.reload();
-    }, 1000);
+    }, 1500);
 });
